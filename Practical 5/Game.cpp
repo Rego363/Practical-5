@@ -50,7 +50,7 @@ void Game::initialize()
 
 void Game::update()
 {
-	cout << "Update up" << endl;
+	
 }
 
 void Game::draw()
@@ -60,14 +60,14 @@ void Game::draw()
 	glBegin(GL_TRIANGLES);
 	{ 
 		//Draw using vectors
-		glVertex3f((GLfloat)vec1.getX(), (GLfloat)vec1.getY(), (GLfloat)vec1.getZ());
-		glVertex3f((GLfloat)vec2.getX(), (GLfloat)vec2.getY(), (GLfloat)vec2.getZ());
-		glVertex3f((GLfloat)vec3.getX(), (GLfloat)vec3.getY(), (GLfloat)vec3.getZ());
+		//glVertex3f((GLfloat)vec1.getX(), (GLfloat)vec1.getY(), (GLfloat)vec1.getZ());
+		//glVertex3f((GLfloat)vec2.getX(), (GLfloat)vec2.getY(), (GLfloat)vec2.getZ());
+		//glVertex3f((GLfloat)vec3.getX(), (GLfloat)vec3.getY(), (GLfloat)vec3.getZ());
 
 		//Draw using matrix
-		//glVertex3f((GLfloat)mat.row(0).getX(), (GLfloat)mat.row(0).getY(), (GLfloat)mat.row(0).getZ());
-		//glVertex3f((GLfloat)mat.row(1).getX(), (GLfloat)mat.row(1).getY(), (GLfloat)mat.row(1).getZ());
-		//glVertex3f((GLfloat)mat.row(2).getX(), (GLfloat)mat.row(2).getY(), (GLfloat)mat.row(2).getZ());
+		glVertex3f((GLfloat)mat.row(0).getX(), (GLfloat)mat.row(0).getY(), (GLfloat)mat.row(0).getZ());
+		glVertex3f((GLfloat)mat.row(1).getX(), (GLfloat)mat.row(1).getY(), (GLfloat)mat.row(1).getZ());
+		glVertex3f((GLfloat)mat.row(2).getX(), (GLfloat)mat.row(2).getY(), (GLfloat)mat.row(2).getZ());
 	}
 	glEnd();
 	window.display();
